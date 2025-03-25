@@ -103,4 +103,5 @@ df[string_columns] = df[string_columns].apply(lambda x: x.str.title())
 print(df.head())
 ```
 
+# 4: ANALYZE
 
