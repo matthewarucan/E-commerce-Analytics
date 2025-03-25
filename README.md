@@ -57,13 +57,50 @@ In this section, we will load and review the dataset using **Pandas** to check f
 - Formatting errors  
 
 ```python
+import openpyxl
 import pandas as pd
 
-# Load dataset
-df = pd.read_csv("eBay_Sales_Data.csv")
+# Step 1: Load the data
+df = pd.read_excel("/Users/matthewarucan/Desktop/eBay_Analysis.xlsx")
 
-# Display basic info
-df.info()
+# View the first few rows of the dataframe to get an overview of the data
+print(df.head())
 
-# Check for missing values
-df.isnull().sum()
+# Check the data types of each column to identify any potential issues
+print(df.dtypes)
+
+# Step 2: Clean numeric columns
+# List of columns that should be cleaned (e.g., to handle '--' as missing data)
+columns_float = [
+    'Net amount', 'Quantity', 'Item Subtotal', 'Shipping & Handling',
+    'Collected Tax', 'Final Value Fee Fixed', 'Final Value Fee Variable',
+    'International Fee', 'Gross Transaction Amount'
+]
+
+# Convert columns to object type first to avoid any downcasting issues
+df[columns_float] = df[columns_float].astype('object')
+
+# Replace '--' with 0, then convert columns to numeric, coercing errors and filling missing values with 0
+df[columns_float] = df[columns_float].replace('--', 0)
+df[columns_float] = df[columns_float].apply(pd.to_numeric, errors='coerce').fillna(0).astype(float)
+
+# Step 3: Remove Duplicate Rows
+# Remove any duplicate rows from the dataset to avoid redundancy
+df = df.drop_duplicates()
+
+# Step 4: Clean string columns
+# Strip leading/trailing whitespace from string columns
+df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
+
+# Fill missing values in string columns with 'Unknown'
+string_columns = ['City', 'State', 'Zip Code', 'Country']
+df[string_columns] = df[string_columns].fillna('Unknown')
+
+# Convert string columns to title case to standardize text format
+df[string_columns] = df[string_columns].apply(lambda x: x.str.title())
+
+# Optional: View cleaned data (for confirmation or debugging)
+print(df.head())
+```
+
+
