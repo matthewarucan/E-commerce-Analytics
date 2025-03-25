@@ -12,9 +12,8 @@ Since this is my business and data, I am the sole stakeholder in this analysis.
 
 ## 1.3: Guiding Questions   
 - **Which categories contribute most to revenue and overall sales performance?**  
-- **Does offering free shipping influence total revenue and profit?**  
-- **What percentage of sales come from repeat customers, and how do they impact profitability?**  
-- **What periods (months, weeks, or days) see the highest and lowest sales? Are there any unexpected seasonal dips?**  
+- **Does offering free shipping influence total revenue and profit?**    
+- **What periods (months, weeks, or days) see the highest and lowest sales?
 - **How do seasonality and specific holidays/events (e.g., Black Friday, Christmas, Back-to-School) impact purchasing behavior?**  
 
 ---
