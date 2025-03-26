@@ -235,6 +235,6 @@ The Share phase of data analytics involves communicating our findings and insigh
 
 ## Guiding Question 1: Which categories contribute most to revenue and overall sales performance?
 
-![](assets/top_2_categories.pdf)
+![](assets/top_2_categories.jpg)
 
 
