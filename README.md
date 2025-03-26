@@ -103,4 +103,131 @@ print(df.head())
 ```
 
 # 4: ANALYZE
+In this step, we calculate key metrics, analyze patterns, and summarize data to provide insights that address our business objectives.
+
+## Which categories contribute most to revenue and overall sales performance?
+
+```python
+# Convert 'Transaction Date' to datetime format if not already done
+df["Transaction Date"] = pd.to_datetime(df["Transaction Date"])
+
+# Extract Year and Quarter from the transaction date
+df["Year"] = df["Transaction Date"].dt.year
+df["Quarter"] = df["Transaction Date"].dt.quarter
+
+# Group by Year, Quarter, and Category, then sum the item subtotal
+category_quarterly_subtotal = df.groupby(["Year", "Quarter", "Category"])["Item Subtotal"].sum().reset_index()
+
+# Get top 5 categories per quarter for each year
+top_categories_per_quarter = category_quarterly_subtotal.groupby(["Year", "Quarter"]).apply(
+    lambda x: x.nlargest(2, "Item Subtotal")
+).reset_index(drop=True)
+
+# Display results
+print(top_categories_per_quarter)
+```
+## Does offering free shipping influence total revenue and profit?
+```python
+# Create a new column: Free Shipping (True if Shipping & Handling Collected == 0)
+df["Free Shipping"] = df["Shipping & Handling"] == 0
+
+# Group by 'Free Shipping' and calculate total revenue (Net amount) and profit
+shipping_impact = df.groupby("Free Shipping").agg(
+    Total_Revenue=("Net amount", "sum"),
+    Total_Profit=("Gross Transaction Amount", "sum"),
+    Average_Order_Value=("Net amount", "mean"),
+    Total_Orders=("Order Number", "count")
+).reset_index()
+
+# Display results
+print(shipping_impact)
+```
+
+## What periods (months, weeks, or days) see the highest and lowest sales?
+```python
+# Extract relevant time-based features
+df["Year"] = df["Transaction Date"].dt.year
+df["Month"] = df["Transaction Date"].dt.month
+df["Week"] = df["Transaction Date"].dt.isocalendar().week
+df["DayOfWeek"] = df["Transaction Date"].dt.day_name()  # Get day as a string (e.g., Monday)
+
+# Group by month and sum sales
+monthly_sales = df.groupby("Month")["Net amount"].sum().reset_index()
+
+# Find highest & lowest sales months
+highest_month = monthly_sales.loc[monthly_sales["Net amount"].idxmax()]
+lowest_month = monthly_sales.loc[monthly_sales["Net amount"].idxmin()]
+
+print(f"Highest Sales Month: {highest_month}")
+print(f"Lowest Sales Month: {lowest_month}")
+
+# Group by month and sum sales
+monthly_sales = df.groupby("Month")["Net amount"].sum().reset_index()
+
+# Find highest & lowest sales months
+highest_month = monthly_sales.loc[monthly_sales["Net amount"].idxmax()]
+lowest_month = monthly_sales.loc[monthly_sales["Net amount"].idxmin()]
+
+print(f"Highest Sales Month: {highest_month}")
+print(f"Lowest Sales Month: {lowest_month}")
+
+# Group by week and sum sales
+weekly_sales = df.groupby("Week")["Net amount"].sum().reset_index()
+
+# Find highest & lowest sales weeks
+highest_week = weekly_sales.loc[weekly_sales["Net amount"].idxmax()]
+lowest_week = weekly_sales.loc[weekly_sales["Net amount"].idxmin()]
+
+print(f"Highest Sales Week: {highest_week}")
+print(f"Lowest Sales Week: {lowest_week}")
+
+# Group by week and sum sales
+weekly_sales = df.groupby("Week")["Net amount"].sum().reset_index()
+
+# Group by day of the week and sum sales
+day_sales = df.groupby("DayOfWeek")["Net amount"].sum()
+
+# Order days properly for better visualization
+day_sales = day_sales.reindex(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
+
+# Print the results
+print(day_sales)
+```
+
+## How do seasonality and specific holidays/events (e.g., Black Friday, Christmas, Back-to-School) impact purchasing behavior?
+```python
+# Convert 'Transaction Date' to datetime if not already
+df["Transaction Date"] = pd.to_datetime(df["Transaction Date"])
+
+# Extract relevant time-based features
+df["Year"] = df["Transaction Date"].dt.year
+df["Month"] = df["Transaction Date"].dt.month
+df["Day"] = df["Transaction Date"].dt.day
+
+# Create event markers based on known holiday dates
+df["Event"] = "Regular Day"  # Default category
+
+# Define event dates
+black_friday = ((df["Month"] == 11) & (df["Day"] >= 23) & (df["Day"] <= 29))  # Black Friday (last Fri of Nov)
+christmas_season = ((df["Month"] == 12) & (df["Day"] >= 25))  # Mid-Dec to Christmas
+back_to_school = ((df["Month"] == 8) | ((df["Month"] == 9) & (df["Day"] <= 15)))  # Aug to mid-Sep
+
+# Assign event labels
+df.loc[black_friday, "Event"] = "Black Friday"
+df.loc[christmas_season, "Event"] = "Christmas"
+df.loc[back_to_school, "Event"] = "Back to School"
+
+# Group by event and calculate total revenue and profit
+event_sales = df.groupby("Event").agg(
+    Total_Revenue=("Net amount", "sum"),
+    Total_Profit=("Gross Transaction Amount", "sum"),
+    Average_Order_Value=("Net amount", "mean"),
+    Total_Orders=("Order Number", "count")
+).reset_index()
+
+# Display results
+print(event_sales)
+```
+
+# 5: SHARE
 
