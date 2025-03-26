@@ -126,6 +126,7 @@ top_categories_per_quarter = category_quarterly_subtotal.groupby(["Year", "Quart
 # Display results
 print(top_categories_per_quarter)
 ```
+
 ## Does offering free shipping influence total revenue and profit?
 ```python
 # Create a new column: Free Shipping (True if Shipping & Handling Collected == 0)
@@ -230,4 +231,10 @@ print(event_sales)
 ```
 
 # 5: SHARE
+The Share phase of data analytics involves communicating our findings and insights effectively to stakeholders or decision-makers. This phase is critical because the value of our analysis depends on how well others understand and act on it.
+
+## Guiding Question 1: Which categories contribute most to revenue and overall sales performance?
+
+
+
 
