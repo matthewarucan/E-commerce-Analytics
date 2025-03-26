@@ -248,4 +248,13 @@ The Share phase of data analytics involves communicating our findings and insigh
 ## Guiding Question 4: How do seasonality and specific holidays/events (e.g., Black Friday, Christmas, Back-to-School) impact purchasing behavior?
 ![](assets/total_sales_event_page.jpg)
 
+# 6: ACT
+Based on the data analysis, several actionable strategies can be implemented to optimize my business sales in Q4 and drive long-term growth.
+
+
+
+
+
+
+
 
