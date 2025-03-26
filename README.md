@@ -234,7 +234,18 @@ print(event_sales)
 The Share phase of data analytics involves communicating our findings and insights effectively to stakeholders or decision-makers. This phase is critical because the value of our analysis depends on how well others understand and act on it.
 
 ## Guiding Question 1: Which categories contribute most to revenue and overall sales performance?
-
 ![](assets/top_2_categories_page.jpg)
+
+
+## Guiding Question 2: Does offering free shipping influence total revenue and profit?
+![](assets/free_shipping_page)
+
+
+## Guiding Question 3: What periods (months, weeks, or days) see the highest and lowest sales?
+![](assets/total_sales_overtime_page)
+
+
+## Guiding Question 4: How do seasonality and specific holidays/events (e.g., Black Friday, Christmas, Back-to-School) impact purchasing behavior?
+![](assets/total_sales_event_page)
 
 
