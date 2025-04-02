@@ -235,18 +235,19 @@ The Share phase of data analytics involves communicating our findings and insigh
 
 ## Guiding Question 1: Which categories contribute most to revenue and overall sales performance?
 ![](assets/)
-
+Men’s Shoes saw a 25% increase in sales from 2021 ($12,541.77) to 2022 ($15,671.12), followed by a significant 46% jump in 2023, reaching $22,908.86. However, sales dropped by 56% in 2024, with Men’s Shoes generating $10,044.13. Men’s Jackets and Men’s Pants showed more modest changes, with Men’s Jackets seeing a 43% increase from 2021 to 2022 and then a 12% decrease in 2023. Overall, Men’s Shoes consistently dominated, despite fluctuations in other categories.
 
 ## Guiding Question 2: Does offering free shipping influence total revenue and profit?
 ![](assets/)
-
+The data indicates that offering free shipping significantly boosts sales performance. Items with free shipping generated $97,511.74, more than double the revenue of $46,091.53 from items without free shipping, a 111% increase. Additionally, total orders for items with free shipping were 1,132, compared to just 499 for items without, a 127% increase. However, the average order value (AOV) for free shipping orders was slightly lower at $86.14, compared to $92.37 for non-free shipping orders, a 7% decrease. Overall, the data supports that free shipping effectively drives higher sales and order volume, despite a slight reduction in AOV.
 
 ## Guiding Question 3: What periods (months, weeks, or days) see the highest and lowest sales?
 ![](assets/)
-
+The sales analysis reveals distinct patterns in purchasing behavior. August had the highest sales at $19,054.46, while October recorded the lowest at $7,860.00, representing a 58% decrease. On a weekly level, Week 31 (late July to early August) led with $5,470.06, while Week 53 (the last week of the year) saw a dramatic drop to $282.66, marking a 95% decline. Regarding days of the week, Sunday topped sales with $21,343.19, closely followed by Saturday at $20,994.21. Midweek days performed well, with Wednesday generating $20,690.80. Sales remained relatively steady from Monday to Friday, ranging from $19,652.05 (Monday) to $20,690.80 (Wednesday). These trends highlight weekends and late summer as peak sales periods, while the end of the year, especially Week 53, sees a sharp decline in revenue.
 
 ## Guiding Question 4: How do seasonality and specific holidays/events (e.g., Black Friday, Christmas, Back-to-School) impact purchasing behavior?
 ![](assets/)
+An analysis of purchasing behavior across specific seasons and holidays reveals key trends. During the Back to School period (August to mid-September), total revenue reached $26,531.74 from 324 orders, with an average order value of $81.89. This represents a 22% increase in revenue compared to Regular Days, which saw $113,150.67 from 1,256 orders, averaging $90.09 per order. In contrast, Black Friday (late November) generated $2,484.60 from 32 orders, averaging $77.64 per order, reflecting a 91% decrease in revenue compared to Back to School. The Christmas season (late December) recorded $1,436.26 in revenue over 19 orders, with an average order value of $75.59, marking a 94% decrease from Back to School revenue. These findings highlight that the Back to School season significantly boosts sales, while Black Friday and Christmas have less of an impact. Interestingly, the average order value is highest on Regular Days, suggesting that customers tend to spend more outside major shopping events.
 
 # 6: ACT
 Based on the data analysis, several actionable strategies can be implemented to optimize my business sales in Q4 and drive long-term growth.
