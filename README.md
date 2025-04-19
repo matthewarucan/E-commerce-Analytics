@@ -237,6 +237,10 @@ The Share phase of data analytics involves communicating our findings and insigh
 ![](assets/)
 Men’s Shoes saw a 25% increase in sales from 2021 ($12,541.77) to 2022 ($15,671.12), followed by a significant 46% jump in 2023, reaching $22,908.86. However, sales dropped by 56% in 2024, with Men’s Shoes generating $10,044.13. Men’s Jackets and Men’s Pants showed more modest changes, with Men’s Jackets seeing a 43% increase from 2021 to 2022 and then a 12% decrease in 2023. Overall, Men’s Shoes consistently dominated, despite fluctuations in other categories.
 
+
+[![Dashboard Screenshot](assets/Category_Comparison.png)(https://public.tableau.com/views/eBay_Visualization/CategoryComparison?:language=enUS&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+
 ## Guiding Question 2: Does offering free shipping influence total revenue and profit?
 ![](assets/)
 The data indicates that offering free shipping significantly boosts sales performance. Items with free shipping generated $97,511.74, more than double the revenue of $46,091.53 from items without free shipping, a 111% increase. Additionally, total orders for items with free shipping were 1,132, compared to just 499 for items without, a 127% increase. However, the average order value (AOV) for free shipping orders was slightly lower at $86.14, compared to $92.37 for non-free shipping orders, a 7% decrease. Overall, the data supports that free shipping effectively drives higher sales and order volume, despite a slight reduction in AOV.
