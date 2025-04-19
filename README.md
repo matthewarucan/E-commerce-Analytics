@@ -242,8 +242,8 @@ Men’s Shoes saw a 25% increase in sales from 2021 ($12,541.77) to 2022 ($15,67
 ## Guiding Question 2: Does offering free shipping influence total revenue and profit?
 The data indicates that offering free shipping significantly boosts sales performance. Items with free shipping generated $97,511.74, more than double the revenue of $46,091.53 from items without free shipping, a 111% increase. Additionally, total orders for items with free shipping were 1,132, compared to just 499 for items without, a 127% increase. However, the average order value (AOV) for free shipping orders was slightly lower at $86.14, compared to $92.37 for non-free shipping orders, a 7% decrease. Overall, the data supports that free shipping effectively drives higher sales and order volume, despite a slight reduction in AOV.
 
-[View the Tableau Dashboard](https://public.tableau.com/app/profile/matthew.arucan/viz/Free_Shipping/FreeShippingvs_NoFreeShipping?publish=yes)
-[![Tableau Dashboard Preview](assets/Free Shipping vs. No Free Shipping.png)](https://public.tableau.com/app/profile/matthew.arucan/viz/Free_Shipping/FreeShippingvs_NoFreeShipping?publish=yes)
+[View the Tableau Dashboard](https://public.tableau.com/views/Free_Shipping/FreeShippingvs_NoFreeShipping?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[![Tableau Dashboard Preview](assets/Free Shipping vs. No Free Shipping.png)](https://public.tableau.com/views/Free_Shipping/FreeShippingvs_NoFreeShipping?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Guiding Question 3: What periods (months, weeks, or days) see the highest and lowest sales?
 ![](assets/)
