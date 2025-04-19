@@ -237,7 +237,9 @@ The Share phase of data analytics involves communicating our findings and insigh
 ![](assets/)
 Men’s Shoes saw a 25% increase in sales from 2021 ($12,541.77) to 2022 ($15,671.12), followed by a significant 46% jump in 2023, reaching $22,908.86. However, sales dropped by 56% in 2024, with Men’s Shoes generating $10,044.13. Men’s Jackets and Men’s Pants showed more modest changes, with Men’s Jackets seeing a 43% increase from 2021 to 2022 and then a 12% decrease in 2023. Overall, Men’s Shoes consistently dominated, despite fluctuations in other categories.
 
-[View the Tableau Dashboard]([https://public.tableau.com/views/eBay_Visualization/CategoryComparison?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/eBay_Visualization/CategoryComparison?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
+
+
+[View the Tableau Dashboard](https://public.tableau.com/views/eBay_Visualization/CategoryComparison?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 
